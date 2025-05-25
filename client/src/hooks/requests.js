@@ -3,6 +3,7 @@ const API_URL = '';
 // Load planets and return as JSON.
 async function httpGetPlanets() {
   const response = await fetch(`${API_URL}/planets`)
+  console.log("response planets", response);
   return await response.json();
 }
 
